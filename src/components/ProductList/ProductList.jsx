@@ -1,7 +1,7 @@
 
 import ProductCard from "../ProductCard/ProductCard";
 
-function ProductList({ products }) {
+function ProductList({ products,addToCart }) {
   return (
     <div className="container mt-5">
 
@@ -14,6 +14,7 @@ function ProductList({ products }) {
             <ProductCard
               key={product.id}
               product={product}
+              addToCart={addToCart}
             />
           ))
         }

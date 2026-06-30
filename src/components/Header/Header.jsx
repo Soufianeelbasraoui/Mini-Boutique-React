@@ -1,7 +1,7 @@
 import "./Header.css";
 import { FaShoppingCart } from "react-icons/fa";
 
-function Header() {
+function Header({cart}) {
   return (
     <header className="shadow-sm bg-white py-3">
       <div className="container">
@@ -25,7 +25,7 @@ function Header() {
           <div className="col-3 text-end">
             <div className="cart">
               <FaShoppingCart size={26} />
-              <span className="badge-cart">0</span>
+              <span className="badge-cart">{cart.length}</span>
             </div>
           </div>
 
