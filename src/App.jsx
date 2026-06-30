@@ -11,6 +11,7 @@ function App() {
 
   const[products, setProducts]=useState(productsData)
   const[cart,setCart]=useState([]);
+  const[showCart,setShowCart]=useState(false);
 
   const addToCart=(product)=>{
     setCart([...cart,product])
@@ -22,9 +23,15 @@ function App() {
   return (
   
   <div>
-   <Header cart={cart}/>
+   <Header cart={cart} setShowCart={setShowCart}/>
    <ProductList products={products} addToCart={addToCart}/>
-    <Cart cart={cart} removeFromCart={removeFromCart}/>
+   {showCart && (
+  <Cart
+    cart={cart}
+    removeFromCart={removeFromCart}
+    setShowCart={setShowCart}
+  />
+)}
    <Footer/>
   </div>
     
