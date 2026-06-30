@@ -1,0 +1,36 @@
+.footer{
+    background:#fff;
+    border-top: 1px solid #ccc;
+    color:#212529;
+    text-align:center;
+    padding:40px 20px;
+}
+.logo{
+    font-weight:bold;
+    margin-bottom:10px;
+}
+.footer p{
+    margin:10px 0;
+}
+.social-icons{
+    margin:20px 0;
+}
+.social-icons a{
+    color:#212529;
+    font-size:24px;
+    margin:0 10px;
+    transition:0.3s;
+}
+.social-icons a:hover{
+    color:#0d6efd;
+}
+
+.footer hr{
+    border-color:#555;
+    margin:20px 0;
+}
+
+.copyright{
+    font-size:14px;
+    color:#ccc;
+}

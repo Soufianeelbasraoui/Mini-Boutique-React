@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Casque Audio",
+    "price": 89.99,
+    "category": "Électronique",
+    "image": "/images/casque.png"
+  },
+  {
+    "id": 2,
+    "name": "Sac à Dos Urbain",
+    "price": 49.99,
+    "category": "Accessoires",
+    "image": "/images/sac.png"
+  },
+  {
+    "id": 3,
+    "name": "Souris Sans Fil",
+    "price": 35.50,
+    "category": "Électronique",
+    "image": "/images/souris.png"
+  },
+  {
+    "id": 4,
+    "name": "Lampe LED",
+    "price": 24.99,
+    "category": "Maison",
+    "image": "/images/lampe.png"
+  }
+]

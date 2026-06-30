@@ -1,0 +1,29 @@
+.nav-link{
+    color:#000;
+    font-weight:500;
+}
+
+.nav-link:hover{
+    color:#0d6efd;
+}
+
+.cart{
+    position:relative;
+    display:inline-block;
+    cursor:pointer;
+}
+
+.badge-cart{
+    position:absolute;
+    top:-8px;
+    right:-10px;
+    width:18px;
+    height:18px;
+    background:red;
+    color:#fff;
+    border-radius:50%;
+    font-size:11px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
