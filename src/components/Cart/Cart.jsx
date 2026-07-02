@@ -21,6 +21,7 @@ function Cart({ cart, removeFromCart, setShowCart }) {
               ))
             }
             <hr />
+            <h4>Total Article : {cart.length}</h4>
             <h4>Total : {total.toFixed(2)} DH</h4>
           </>
         )
