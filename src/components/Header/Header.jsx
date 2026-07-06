@@ -1,3 +1,4 @@
+import { Link, NavLink } from "react-router-dom";
 import "./Header.css";
 import { FaShoppingCart } from "react-icons/fa";
 
@@ -7,18 +8,23 @@ function Header({cart,setShowCart}) {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-3">
+            <Link to="/Home" className="nav-link">
             <h3 className="m-0 fw-bold">MyShop</h3>
+            </Link>
           </div>
           <div className="col-6">
             <ul className="nav justify-content-center">
               <li className="nav-item">
-                <a href="#" className="nav-link">Accueil</a>
+                <NavLink to="/Home"  className="nav-link">Accueil </NavLink>
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link">Produits</a>
+                <NavLink to="/ProductList" className="nav-link">Produits</NavLink>
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link">À propos</a>
+                 <NavLink to="/" className="nav-link">À propos</NavLink>
+              </li>
+              <li className="nav-item">
+                  <NavLink to="/AddProduc" className="nav-link"> Ajouter Produit</NavLink>
               </li>
             </ul>
           </div>
