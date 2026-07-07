@@ -6,6 +6,9 @@ import productsData from "./data/productsData.json"
 import Footer from './components/Footer/Footer'
 import ProductList from './components/ProductList/ProductList'
 import Cart from './components/Cart/Cart'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import AddProduct from './components/AddProduct/AddProduct'
+import Home from './components/Home/Home'
 
 function App() {
 
@@ -24,8 +27,16 @@ function App() {
   return (
   
   <div>
-   <Header cart={cart} setShowCart={setShowCart}/>
-   <ProductList products={products} addToCart={addToCart}/>
+    <BrowserRouter>
+    <Header cart={cart} setShowCart={setShowCart}/>
+    <Routes>
+      <Route path='/Home' element={<Home products={products} addToCart={addToCart}/>}/>
+      <Route path='/ProductList' element={<ProductList products={products} addToCart={addToCart}/>}/>
+      <Route path='/AddProduc' element={<AddProduct/>}/>
+    </Routes>
+    <Footer/>
+    </BrowserRouter>
+
    {showCart && (
   <Cart
     cart={cart}
@@ -33,7 +44,7 @@ function App() {
     setShowCart={setShowCart}
   />
 )}
-   <Footer/>
+  
   </div>
     
       
