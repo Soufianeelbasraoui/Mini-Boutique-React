@@ -13,6 +13,7 @@ function App() {
   const[cart,setCart]=useState([]);
   const[showCart,setShowCart]=useState(false);
 
+
   const addToCart=(product)=>{
     setCart([...cart,product])
   }
@@ -20,12 +21,18 @@ function App() {
   const removeFromCart=(id)=>{
     setCart(cart.filter((item)=>item.id!=id))
   }
+
+  const countcart=()=>{
+
+    setCount()
+  }
  
   return (
   
   <div>
    <Header cart={cart} setShowCart={setShowCart}/>
-   <ProductList products={products} addToCart={addToCart}/>
+   <ProductList products={products} addToCart={addToCart} />
+
    {showCart && (
   <Cart
     cart={cart}
