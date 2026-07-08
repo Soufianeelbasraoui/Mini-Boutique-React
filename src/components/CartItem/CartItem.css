@@ -1,5 +1,7 @@
-.icons{
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
+.cart-item {
+  background: #fff;
+}
+
+.icons {
+  cursor: pointer;
 }

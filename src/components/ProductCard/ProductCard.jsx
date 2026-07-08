@@ -1,7 +1,6 @@
+import './ProductCard.css';
 
-import "./ProductCard.css";
-
-function ProductCard({ product,addToCart }) {
+function ProductCard({ product, addToCart }) {
   return (
     <div className="col-lg-3 col-md-6 mb-4">
       <div className="product-card">
@@ -9,13 +8,18 @@ function ProductCard({ product,addToCart }) {
           <img src={product.image} alt={product.name} />
         </div>
         <div className="product-info">
+          <span className="badge bg-light text-secondary border mb-2" style={{ fontSize: '11px' }}>
+            {product.category}
+          </span>
           <h5>{product.name}</h5>
-          <h4>{product.price} DH</h4>
-          <button className="btn btn-primary btn-sm" onClick={()=>addToCart(product)}>
-            Ajouter
+          <h4>{product.price.toFixed(2)} DH</h4>
+          <button
+            className="btn btn-primary btn-sm"
+            onClick={() => addToCart(product)}
+          >
+            Ajouter au panier
           </button>
         </div>
-
       </div>
     </div>
   );

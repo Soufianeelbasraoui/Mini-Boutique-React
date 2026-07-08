@@ -1,12 +1,29 @@
-.cart-box{
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 350px;
-    height: 100vh;
-    background: #fff;
-    padding: 20px;
-    box-shadow: -5px 0 10px rgba(0,0,0,.2);
-    overflow-y: auto;
-    z-index: 999;
+.cart-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 999;
+}
+
+.cart-box {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 360px;
+  height: 100vh;
+  background: #fff;
+  padding: 24px;
+  box-shadow: -4px 0 20px rgba(0, 0, 0, 0.12);
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.cart-header {
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 16px;
+}
+
+.cart-items {
+  max-height: 55vh;
+  overflow-y: auto;
 }

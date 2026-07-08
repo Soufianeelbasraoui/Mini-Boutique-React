@@ -1,14 +1,19 @@
+const CATEGORIES = ['Tous', 'Électronique', 'Maison', 'Accessoires', 'Mode'];
 
-
-function CategoryFilter({setCategory}){
-    return(
-        <div className="d-flex gap-3 mb-3">
-            <button className="btn btn-primary" onClick={()=>setCategory("Tous")}>Tous</button>
-            <button className="btn border" onClick={()=>setCategory("Électronique")}>Électronique</button>
-            <button className="btn border" onClick={()=>setCategory("Maison")}>Maison</button>
-            <button className="btn border" onClick={()=>setCategory("Accessoires")}>Accessoires</button>
-
-        </div>
-    )
+function CategoryFilter({ setCategory, activeCategory }) {
+  return (
+    <div className="d-flex flex-wrap gap-2 mb-4">
+      {CATEGORIES.map((cat) => (
+        <button
+          key={cat}
+          className={`btn btn-sm ${activeCategory === cat ? 'btn-primary' : 'btn-outline-secondary'}`}
+          onClick={() => setCategory(cat)}
+        >
+          {cat}
+        </button>
+      ))}
+    </div>
+  );
 }
+
 export default CategoryFilter;

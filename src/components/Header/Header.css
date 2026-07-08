@@ -1,29 +1,51 @@
-.nav-link{
-    color:#000;
-    font-weight:500;
+.header-bar {
+  border-bottom: 1px solid #f0f0f0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
-.nav-link:hover{
-    color:#0d6efd;
+.nav-link {
+  color: #444;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 6px;
+  transition: color 0.2s;
 }
 
-.cart{
-    position:relative;
-    display:inline-block;
-    cursor:pointer;
+.nav-link:hover {
+  color: #0d6efd;
 }
 
-.badge-cart{
-    position:absolute;
-    top:-8px;
-    right:-10px;
-    width:18px;
-    height:18px;
-    background:red;
-    color:#fff;
-    border-radius:50%;
-    font-size:11px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+.active-link {
+  color: #0d6efd !important;
+  font-weight: 600;
+}
+
+.cart-icon {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.2s;
+}
+
+.cart-icon:hover {
+  color: #0d6efd;
+}
+
+.badge-cart {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  width: 18px;
+  height: 18px;
+  background: #dc3545;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
 }
