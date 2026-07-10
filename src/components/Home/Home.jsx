@@ -5,7 +5,7 @@ import './Home.css';
 function Home({ products, addToCart }) {
   return (
     <>
-      {/* Hero Section */}
+
       <section className="hero-banner py-5">
         <div className="container">
           <div className="row align-items-center g-4">
@@ -25,7 +25,7 @@ function Home({ products, addToCart }) {
             </div>
             <div className="col-lg-6 text-center">
               <img
-                src="/images/hero.png"
+                src="/images/souris.png"
                 alt="MyShop Banner"
                 className="img-fluid hero-image"
               />
@@ -33,8 +33,6 @@ function Home({ products, addToCart }) {
           </div>
         </div>
       </section>
-
-      {/* Catégories */}
       <section className="container py-5">
         <div className="text-center mb-4">
           <h2 className="fw-bold">Nos Catégories</h2>
@@ -48,7 +46,7 @@ function Home({ products, addToCart }) {
             { label: 'Accessoires', img: '/images/sac.png' },
           ].map((cat) => (
             <div key={cat.label} className="col-6 col-md-3">
-              <div className="category-item border rounded-3 p-4 bg-white shadow-sm">
+              <div className="category-item border  p-4 bg-white shadow-sm">
                 <div className="category-img-container mb-3">
                   <img src={cat.img} alt={cat.label} className="img-fluid" />
                 </div>
@@ -58,8 +56,6 @@ function Home({ products, addToCart }) {
           ))}
         </div>
       </section>
-
-      {/* Produits populaires */}
       <section className="container py-5" id="produits">
         <div className="d-flex justify-content-between align-items-center mb-4">
           <h2 className="fw-bold m-0">Produits Populaires</h2>
@@ -77,9 +73,7 @@ function Home({ products, addToCart }) {
           ))}
         </div>
       </section>
-
-      {/* Bannière promo */}
-      <section className="promo-banner py-5 bg-dark text-white my-4 rounded-3 mx-3">
+      <section className="promo-banner py-5 bg-dark text-white my-4  mx-3">
         <div className="container text-center py-3">
           <h2 className="fw-bold mb-3">Offres spéciales jusqu&apos;à -30%</h2>
           <p className="text-white-50 mb-4">

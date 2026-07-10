@@ -7,7 +7,6 @@ function Cart({ cart, removeFromCart, setShowCart }) {
   return (
     <div className="cart-overlay">
       <div className="cart-box">
-        {/* En-tête */}
         <div className="cart-header d-flex justify-content-between align-items-center mb-4">
           <h5 className="m-0 fw-bold">Mon Panier</h5>
           <button
@@ -17,7 +16,6 @@ function Cart({ cart, removeFromCart, setShowCart }) {
           />
         </div>
 
-        {/* Contenu */}
         {cart.length === 0 ? (
           <div className="text-center py-5 text-muted">
             <p className="mb-0">Votre panier est vide.</p>
@@ -42,9 +40,6 @@ function Cart({ cart, removeFromCart, setShowCart }) {
               <span className="fw-bold fs-5">Total</span>
               <span className="fw-bold fs-5 text-primary">{total.toFixed(2)} DH</span>
             </div>
-            <button className="btn btn-primary w-100 mt-4 py-2 fw-semibold">
-              Passer la commande
-            </button>
           </>
         )}
       </div>

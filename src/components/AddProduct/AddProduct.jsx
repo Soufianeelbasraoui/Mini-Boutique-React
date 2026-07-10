@@ -50,7 +50,6 @@ function AddProduct({ addProduct }) {
           <div className="card border-0 shadow-sm p-4 rounded-3">
             <h2 className="text-center mb-1 fw-bold">Ajouter un Produit</h2>
             <p className="text-center text-muted mb-4">Remplissez les informations ci-dessous</p>
-
             <form onSubmit={handleSubmit(onSubmit)} noValidate>
               <div className="mb-3">
                 <label className="form-label fw-semibold">Nom du produit</label>
@@ -110,7 +109,6 @@ function AddProduct({ addProduct }) {
               <button type="submit" className="btn btn-primary w-100 py-2 fw-semibold">
                 Ajouter le produit
               </button>
-
             </form>
           </div>
         </div>
